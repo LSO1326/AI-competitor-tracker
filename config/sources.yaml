@@ -10,13 +10,15 @@ sources:
       rate_limit: 5
 
     - name: "Google AI Blog"
-      url: "https://ai.googleblog.com"
-      rss_url: "https://ai.googleblog.com/feeds/posts/default"
+      url: "https://research.google/blog/"
+      rss_url: "https://research.google/blog/rss/"
       selectors:
-        title: "h1, .post-title"
-        content: ".post-body, article"
-        date: ".published, time"
-      rate_limit: 5
+        title: ".blog-post-title, h2 a, .post-title"
+        content: ".blog-post-summary, .post-body, article"
+        date: ".blog-post-date, .published, time"
+        link: "a[href*='/blog/']"
+      rate_limit: 3
+      special_handling: "google_research"
 
     - name: "Microsoft AI Blog"
       url: "https://blogs.microsoft.com/ai/"
