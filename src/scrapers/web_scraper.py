@@ -108,8 +108,14 @@ class WebScraper:
             self.logger.error(f"RSS feed scraping failed: {e}")
             return []
 
-    def extract_articles(self, url: str, selectors: Dict[str, str], rss_url: str = None) -> List[Dict]:
+    def extract_articles(self, url: str, selectors: Dict[str, str], rss_url: str = None, special_handling: str = None) -> List[Dict]:
         """Extract articles from a webpage"""
+        # Handle special cases
+        if special_handling == "google_research":
+            from .google_scraper import GoogleResearchScraper
+            google_scraper = GoogleResearchScraper()
+            return google_scraper.get_latest_articles()
+
         response = self._make_request(url)
 
         if not response:

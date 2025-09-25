@@ -85,7 +85,8 @@ class AICompetitorIntelligence:
             self.scraper.rate_limit = rate_limit
 
             # Try scraping the source
-            articles = self.scraper.extract_articles(source_url, selectors, rss_url)
+            special_handling = source.get('special_handling')
+            articles = self.scraper.extract_articles(source_url, selectors, rss_url, special_handling)
 
             if articles:
                 print(f"✅ {source_name}: Found {len(articles)} articles")
