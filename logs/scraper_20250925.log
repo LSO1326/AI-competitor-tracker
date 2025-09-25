@@ -1,0 +1,23 @@
+2025-09-25 15:55:55,663 - scrapers.web_scraper - WARNING - HTTP 403 for https://openai.com/blog
+2025-09-25 15:55:58,723 - scrapers.web_scraper - WARNING - HTTP 403 for https://openai.com/blog
+2025-09-25 15:56:02,076 - scrapers.web_scraper - WARNING - HTTP 403 for https://openai.com/blog
+2025-09-25 15:56:02,997 - scrapers.web_scraper - WARNING - HTTP 403 for https://blogs.microsoft.com/ai/
+2025-09-25 15:56:06,527 - scrapers.web_scraper - WARNING - HTTP 400 for https://ai.meta.com/blog/
+2025-09-25 15:56:09,644 - scrapers.web_scraper - WARNING - HTTP 400 for https://ai.meta.com/blog/
+2025-09-25 15:56:12,438 - scrapers.web_scraper - WARNING - HTTP 400 for https://ai.meta.com/blog/
+2025-09-25 15:56:16,938 - scrapers.web_scraper - WARNING - HTTP 403 for https://openai.com/blog
+2025-09-25 15:56:17,532 - scrapers.web_scraper - WARNING - HTTP 400 for https://ai.meta.com/blog/
+2025-09-25 15:56:21,761 - scrapers.web_scraper - WARNING - HTTP 400 for https://ai.meta.com/blog/
+2025-09-25 15:56:23,293 - scrapers.web_scraper - WARNING - HTTP 403 for https://openai.com/blog
+2025-09-25 15:56:26,039 - scrapers.web_scraper - WARNING - HTTP 400 for https://ai.meta.com/blog/
+2025-09-25 15:56:27,033 - scrapers.web_scraper - WARNING - Rate limited on https://venturebeat.com/ai/, waiting 3.3804777874529197s
+2025-09-25 15:56:27,235 - scrapers.web_scraper - WARNING - HTTP 403 for https://openai.com/blog
+2025-09-25 15:56:27,236 - scrapers.web_scraper - INFO - Falling back to RSS for https://openai.com/blog
+2025-09-25 15:56:27,539 - scrapers.web_scraper - INFO - Successfully scraped 10 articles from RSS
+2025-09-25 15:56:30,431 - scrapers.web_scraper - WARNING - Rate limited on https://venturebeat.com/ai/, waiting 4.8752581783827145s
+2025-09-25 15:56:35,327 - scrapers.web_scraper - WARNING - Rate limited on https://venturebeat.com/ai/, waiting 6.4180014737767594s
+2025-09-25 15:56:41,753 - reports.report_generator - INFO - Executive report saved to data/reports/ai_intelligence_report_2025-09-25.md
+2025-09-25 15:56:41,754 - reports.report_generator - INFO - JSON export saved to data/reports/ai_intelligence_data_20250925_155641.json
+2025-09-25 15:56:41,754 - reports.report_generator - INFO - CSV export saved to data/reports/ai_intelligence_articles_20250925_155641.csv
+2025-09-25 15:56:41,757 - reports.report_generator - INFO - HTML dashboard saved to data/reports/ai_intelligence_dashboard_20250925_155641.html
+2025-09-25 15:56:41,757 - reports.report_generator - INFO - Generated 4 report formats

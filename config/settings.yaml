@@ -1,0 +1,25 @@
+scraping:
+  max_workers: 3
+  default_rate_limit: 2.0
+  request_timeout: 30
+  max_retries: 3
+  user_agent_rotation: true
+  respect_robots_txt: true
+
+processing:
+  min_relevance_score: 2
+  max_articles_per_source: 10
+  content_summary_length: 200
+  days_back: 7
+  enable_deduplication: true
+
+reporting:
+  output_formats: ["markdown", "json", "html", "csv"]
+  max_articles_in_report: 50
+  include_trending_topics: true
+  executive_summary: true
+
+monitoring:
+  enable_health_checks: true
+  log_level: "INFO"
+  log_retention_days: 30

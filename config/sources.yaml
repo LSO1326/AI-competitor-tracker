@@ -1,0 +1,77 @@
+sources:
+  tier1:
+    - name: "OpenAI Blog"
+      url: "https://openai.com/blog"
+      rss_url: "https://openai.com/blog/rss.xml"
+      selectors:
+        title: "h1, .post-title, [data-testid='post-title']"
+        content: "article, .post-content, [data-testid='post-content']"
+        date: "time, .post-date, [data-testid='post-date']"
+      rate_limit: 5
+
+    - name: "Google AI Blog"
+      url: "https://ai.googleblog.com"
+      rss_url: "https://ai.googleblog.com/feeds/posts/default"
+      selectors:
+        title: "h1, .post-title"
+        content: ".post-body, article"
+        date: ".published, time"
+      rate_limit: 5
+
+    - name: "Microsoft AI Blog"
+      url: "https://blogs.microsoft.com/ai/"
+      selectors:
+        title: "h1, .entry-title"
+        content: ".entry-content, article"
+        date: ".entry-date, time"
+      rate_limit: 5
+
+    - name: "Anthropic News"
+      url: "https://www.anthropic.com/news"
+      selectors:
+        title: "h1, h2"
+        content: "article, .content"
+        date: "time, .date"
+      rate_limit: 5
+
+  tier2:
+    - name: "Meta AI Blog"
+      url: "https://ai.meta.com/blog/"
+      selectors:
+        title: "h1, .title"
+        content: "article, .content"
+        date: "time, .date"
+      rate_limit: 3
+
+    - name: "DeepMind Blog"
+      url: "https://deepmind.google/discover/blog/"
+      selectors:
+        title: "h1, .title"
+        content: "article, .content"
+        date: "time, .date"
+      rate_limit: 3
+
+    - name: "Hugging Face Blog"
+      url: "https://huggingface.co/blog"
+      selectors:
+        title: "h1, .title"
+        content: "article, .prose"
+        date: "time, .date"
+      rate_limit: 3
+
+  tier3:
+    - name: "TechCrunch AI"
+      url: "https://techcrunch.com/category/artificial-intelligence/"
+      selectors:
+        title: "h2 a, .post-title"
+        content: ".article-content, .post-content"
+        date: "time, .date"
+      rate_limit: 2
+
+    - name: "VentureBeat AI"
+      url: "https://venturebeat.com/ai/"
+      selectors:
+        title: "h1, .article-title"
+        content: ".article-content"
+        date: "time, .date"
+      rate_limit: 2
